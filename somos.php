@@ -115,6 +115,14 @@
 		font-size: 18px;
 		color: #1C1C1C;
 	}
+	
+	.paragrafos1{
+		
+		font-family: Arial, Verdana;
+		font-size: 15px;
+		color: 	#1C1C1C;
+	}
+		
 </style>
 		
 		
@@ -142,10 +150,24 @@
 <div class="container">
 
 
+	<div class="row" style="padding-top: px">
+	<div class="col-md-2 paragrafos1">
+
+		&#9993; deliveryfood.com.br 
+
+	</div>
+	
+	<div class="col-md-3 paragrafos1" style="margin-left: 0px;">
+
+	 &#9743; (84) 9999-9999
+	
+	</div>
+	</div>
+
 
 	<div class="container" style="">
 	
-	<div class="row" style="padding-top: 20px;">
+	<div class="row" style="">
 	
 	<div class="col-md-12">
 	
