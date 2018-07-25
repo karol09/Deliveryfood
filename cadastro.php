@@ -1,4 +1,5 @@
 ﻿<!Doctype html>
+
 <html>
 
 <head>
@@ -133,15 +134,8 @@
 	
 	
 	</div>
-	
 	</div>
-	
-	
 
-
-	
-
-	
 	
 </body>
 
