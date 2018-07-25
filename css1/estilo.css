@@ -1,3 +1,10 @@
+
+@font-face{
+	
+font-family: "Mungkin Italic";
+  src: url("Mungkin Italic.otf") format("truetype");
+}
+
 .p1
 {
 
@@ -8,6 +15,7 @@ padding-top: 0px;
 .p3{
 	
 	border-bottom: 1px solid grey;
+	color: OrangeRed;
 }
 
 
@@ -31,18 +39,11 @@ margin-right: auto;
 	
 }
 
-.fon2{
-	
-	font-family: "Verdana";
-	font-size: 35px;
-	color: white
-}
-
 .cor{
 	
 	font-family: arial;
 	font-size: 15px;
-	color: orangered;
+	color: #1C1C1C;
 	text-align: center;
 	
 }
@@ -52,16 +53,23 @@ margin-right: auto;
 	text-align: center;
 	font-size: 15px;
 	font-family: arial;
-	color: orangered;
+	color: #1C1C1C;
 	
 }
 
 
 .p10{
-	font-family: arial;
+	
+	font-family: "Mungkin Italic";
 	padding-top: 10px;
 	font-size: 15px;
 	color: orangered;
+}
+
+.fon1{
+	
+	font-family: "Mungkin Italic";
+	
 }
 
 
@@ -71,3 +79,9 @@ margin-right: auto;
 	width: 540px;
 	
 }
+
+.teste{
+	
+	background-color: #FFFACD
+}
+
