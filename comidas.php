@@ -202,7 +202,7 @@
 	  
         <div class="carousel-caption" style="padding: 100px;">
           
-		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Pesquise preÃ§os antes de comprar. FaÃ§a um orÃ§amento! </h1>
+		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Pesquise preços antes de comprar. Faça um orçamento! </h1>
 		  
           </div>
       

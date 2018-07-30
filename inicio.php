@@ -249,19 +249,17 @@ span.psw {
 		
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
+  <form class="modal-content animate" action="php/recebeLogin.php">
+   
+   <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
        <h1 style="text-align: center; font-family: Arial; padding-top: 25px; padding-bottom: 15px"> LOGIN </h1>
     </div>
     
 
     <div class="plis">
-    
       <p><input type="text" placeholder="&#128272; usuário" name="uname" class="estilo" required></p>
-
-      <p><input type="password" placeholder="&#128272; senha" class="estilo" name="psw" required> </p>
-        
+      <p><input type="password" placeholder="&#128272; senha" class="estilo" name="psw" required> </p>  
       <button type="submit" class="botao">entrar</button>
     </div>
   </form>
