@@ -31,6 +31,8 @@
 	 
 	<link rel="stylesheet" href="css/flexslider.css">
 	
+		<link href="css1/login.css" rel="stylesheet">
+	
 	<link href="css/bootstrap-responsive.css" rel="stylesheet"/>
 	<link href="est.css" rel="stylesheet"/>
     <script src="js/jquery.jcarousellite.js"></script>
@@ -105,7 +107,7 @@
   width: 86%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
 .sticky + .content {
   padding-top: 102px;
 }
@@ -123,6 +125,88 @@
 		font-size: 15px;
 		color: #1C1C1C;
 	}
+	
+.plis{
+
+padding: 16px
+
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+	height: 60%;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    
+}
 		
 		
 </style>
@@ -152,7 +236,7 @@
 	<div class="row" style="">
 	<div class="col-md-2 paragrafos1">
 
-		&#9993; deliveryfood.com.br 
+	&#9993; deliveryfood.com.br 
 
 	</div>
 	
@@ -161,8 +245,43 @@
 	 &#9743; (84) 9999-9999
 	
 	</div>
+	
+	<div class="col-md-7" style="text-align: right">
+
+	 <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="paragrafos1"> LOGIN</a>
+	
+	</div>
 	</div>
 	
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="php/recebeLogin.php">
+   
+   <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+       <h1 style="text-align: center; font-family: Arial; padding-top: 25px; padding-bottom: 15px"> LOGIN </h1>
+    </div>
+    
+
+    <div class="plis">
+      <p><input type="text" placeholder="&#128272; usuário" name="uname" class="estilo" required></p>
+      <p><input type="password" placeholder="&#128272; senha" class="estilo" name="psw" required> </p>  
+      <button type="submit" class="botao">entrar</button>
+    </div>
+  </form>
+</div>
+	
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 	
 <div class="container" style="">
 
@@ -189,7 +308,7 @@
 	  
         <div class="carousel-caption" style="padding: 100px;">
           
-		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Compre del�cias para qualquer ocasião!</h1>
+		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Compre delícias para qualquer ocasião!</h1>
 		  
           </div>
       
@@ -202,7 +321,7 @@
 	  
         <div class="carousel-caption" style="padding: 100px;">
           
-		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Pesquise pre�os antes de comprar. Fa�a um or�amento! </h1>
+		  <h1 class="p6 fon2" style="font-family: verdana;  font-size: 35px;"> Pesquise preços antes de comprar. Faça um orçamento! </h1>
 		  
           </div>
       
@@ -239,7 +358,7 @@
 			</div>
 
 
-		<div class="conatainer">
+		<div class="container">
 		
 		<div class="row" style="padding-top: 40px; padding-bottom: 40px;">
 		
@@ -248,7 +367,6 @@
 		
 		<h2 style="text-align: center; font-family: Arial; color: #1C1C1C" class="p3">Encontre delícias para qualquer ocasião!</h2>
 		
-		
 		</div>
 		</div>
 		
@@ -256,7 +374,6 @@
 		
 		
 		<div class="col-md-12" style="text-align: right">
-		
 		<form action=" " method="post">
 		
 		<label for="busca" class="p3 paragrafos">Buscar produtos pelo CEP:</label>
@@ -265,8 +382,6 @@
 		
 		<button type="submit" style="font-family: arial">OK</button></p>
 		</form>
-		
-	
 		
 		</div>
 		</div>

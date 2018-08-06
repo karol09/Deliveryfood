@@ -119,7 +119,7 @@
 		color: #1C1C1C;
 	}
 	
-/* Full-width input fields */
+
 
 .plis{
 
@@ -245,6 +245,7 @@ span.psw {
 	 <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="paragrafos1"> LOGIN</a>
 	
 	</div>
+	</div>
 	
 		
 <div id="id01" class="modal">
@@ -277,10 +278,7 @@ window.onclick = function(event) {
     }
 }
 </script>
-			
-	</div>
-
-	
+				
 	<div class="container" style="">
 	
 	<div class="row" style="">
